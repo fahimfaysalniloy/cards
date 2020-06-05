@@ -46,7 +46,7 @@ main{
 	display: grid;
 	grid-gap: 20px;
 	grid-template-columns: repeat(3,1fr);
-	grid-template-rows: repeat(4,1fr); 
+	grid-template-rows: repeat(4,100px); 
 	grid-template-areas: 
 	". t ."
 	"s t c"
@@ -62,6 +62,7 @@ main{
 .box-1{
 	border-top: 5px solid var(--cyan);
 	grid-area: s;
+
 }
 .box-2{
 	border-top: 5px solid var(--red);
@@ -77,18 +78,20 @@ main{
 
 }
 .container h1{
-	font-size: 1.5em;
+	font-size: 1.6vw;
 	margin-bottom: 12px;
 }
 .container p{
-	font-size: .9em;
+	font-size: 1.1vw;
 	font-weight: 200;
 	color: #00000096;
 }
 .container img{
-	width: 40px;
+	width: 15%;
 	float: right;
-	margin-top: 5%;	
+	padding-top: 20%;
+	
+	
 }
 /*FOOTER*/
 footer{
@@ -123,5 +126,14 @@ footer{
 	"k"
 	"c"
 		
+	}
+	.container h1{
+		font-size: 25px;
+	}
+	.container p{
+		font-size: 14px;
+	}
+	.container img{
+		width: 40px;
 	}
 }
